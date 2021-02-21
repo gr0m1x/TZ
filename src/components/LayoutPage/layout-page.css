@@ -1,0 +1,127 @@
+.popup-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0,0,0,0.2);
+}
+
+.popup-background-cover {
+    padding: 10px;
+}
+
+.popup-body {
+    position: relative;
+    width: 100%;
+    max-width: 281px;
+    padding: 5px;
+    margin: 20px;
+
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.3);
+
+
+    background-image: url("../../../src/images/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box;
+}
+
+.popup-body::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: -5px;
+    z-index: -1;
+    width: calc(100% + 10px);
+    height: 0;
+
+    box-shadow: 0 -1px 4px 1px rgba(0,0,0,0.5);
+}
+
+.popup-top {
+    margin-bottom: 10px;
+}
+
+.popup-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.sales {
+    color: #333333;
+    font-size: 12px;
+}
+
+.earnings {
+    font-weight: 600;
+    color: #333333;
+    font-size: 12px;
+}
+
+.progress-bar {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #d7eaf6;
+    line-height: 15px;
+    color: #326381;
+}
+
+.progress-line {
+    content: '';
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    background-color: #9fcce9;
+    transition: width 200ms ease-in-out;
+}
+
+.popup-bottom {
+    background: linear-gradient(#ffffff, #effaff);
+    border: 1px solid #ddeef7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.progress-title {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.continue-subscribe {
+    display: flex;
+    align-items: center;
+}
+
+.continue-btn {
+    font-size: 13px;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    border: 1px solid #000000;
+    background: linear-gradient(#919bbc, #031973);
+    cursor: pointer;
+}
+
+.day-left {
+    padding: 0 5px;
+    text-align: center;
+    font-size: 11px;
+    color: #999999;
+    flex-grow: 1;
+}
