@@ -1,0 +1,17 @@
+.characters-list {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.characters-list th {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+.characters-list .name {
+    cursor: pointer;
+}
+.characters-list .name:hover {
+    background-color: #dadada;
+}
